@@ -41,16 +41,16 @@ int main(){
     int angle;
     char rule[16];
 
-    printf("Digite o axiom da Ilha de Koch: ");
+    printf("Digite o axioma da Ilha de Koch: ");
     scanf("%s", axiom);
 
-    printf("Digite o angle da Ilha de Koch: ");
+    printf("Digite o angulo da Ilha de Koch: ");
     scanf("%d", &angle);
 
-    printf("Digite a rule da Ilha de Koch: ");
+    printf("Digite a regra da Ilha de Koch: ");
     scanf("%s", rule);
 
-    fprintf(f, "axiom: %s\nangle: %d\nrule: %s\n", axiom, angle, rule);
+    fprintf(f, "Ilha de Koch \nAxioma: %s\nÂngulo: %d\nRegra: %s\n", axiom, angle, rule);
     fprintf(f, "---------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 1; i <= 4; i++)

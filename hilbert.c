@@ -34,7 +34,7 @@ char* operational(char* s){
     return aux;
 };
 
-void substituir(char* s){
+void discard(char* s){
     for(int i=0; s[i]!='\0'; i++){ 
         if(s[i]=='X' || s[i]=='Y'){
             
@@ -54,7 +54,7 @@ void substituir(char* s){
 
 char* control(char* s, int n){
     if(n==1){
-        substituir(s);
+        discard(s);
         return s;
     }
     return control(operational(s), n-1);
@@ -69,19 +69,19 @@ int main(){
     char rulex[12];
     char ruley[12];
 
-    printf("Digite o axiom de espaço de Hilbert: ");
+    printf("Digite o axioma do Preechimento de Hilbert: ");
     scanf("%s", axiom);
 
-    printf("Digite o angle de espaço de Hilbert: ");
+    printf("Digite o ângulo do Preechimento de Hilbert: ");
     scanf("%d", &angle);
 
-    printf("Digite a rule X de espaço de Hilbert: ");
+    printf("Digite a regra X do Preechimento de Hilbert: ");
     scanf("%s", rulex);
 
-    printf("Digite a rule Y de espaço de Hilbert: ");
+    printf("Digite a regra Y do Preechimento de Hilbert: ");
     scanf("%s", ruley);
 
-    fprintf(f, "axiom: %s\nangle: %d\nrule X: %s\nrule Y: %s\n", axiom, angle, rulex, ruley);
+    fprintf(f, "Preenchimento de Hilbert \nAxioma: %s\nÂngulo: %d\nRegra X: %s\nRegra Y: %s\n", axiom, angle, rulex, ruley);
     fprintf(f, "---------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 1; i <= 4; i++)
