@@ -1,13 +1,13 @@
-Axioma: Y
-Angulo: 60
-Regra X: YF-FXY+XFY-+FX
-Regra Y: F+XY+FYX+FX-YF
+axiom: X
+angle: 60
+rule X: YX+F-YX-F
+rule Y: XY-F+XY+F
 ---------------------------------------------------------------------------------------------------------
-Estágio 1: F++F+F-F
+Estágio 1: -F++F
 ---------------------------------------------------------------------------------------------------------
-Estágio 2: F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF
+Estágio 2: -F++F+F--F-F+-F++F+F--F+F
 ---------------------------------------------------------------------------------------------------------
-Estágio 3: F+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F-F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF
+Estágio 3: -F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F-F+-F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F+F
 ---------------------------------------------------------------------------------------------------------
-Estágio 4: F+F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF-FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FFF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF-+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F-F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF+FF+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F-F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFFF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF-FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FFF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF-+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF-FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FFF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF-+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F-F+F++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FF+FF+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F+FF++F+F-FF-FF-F+F-+FF++F+F-F+F-F+F-+FFF++F+F-F-+FF-F+F-+F-F+F-F+F-+FF++F+F-F+FF++F+F-FF-F+F-+F+FF-F+F-+F-F++F+F-FFFF�
+Estágio 4: -F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F-F+-F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F+F+F--F-F++F+F-+F--F-F++F-F-F++F+F--F-F+-F++F+F--F+F+F-+F--F-F++F+F-+F--F-F++F-F-F++F+F--F-F+-F++F+F--F+F-F-F+-F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F-F+-F++F+F--F-F+-F++F+F--F+F+F--F-F++F+F-+F--F-F++F-F+F+F--F-F++F+F-+F--F-F++F-F-F++F+F--F-F+-F++F+F--F+F+F-+F--F-F++F+F-+F--F-F++F-F-F++F+F--F-F+-F++F+F--F+F-F+F
 ---------------------------------------------------------------------------------------------------------

@@ -2,34 +2,35 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-char* operacional(char* s){
-    const char* RULEX="YF-FXY+XFY-+FX";
-    const char* RULEY="F+XY+FYX+FX-YF";
-    const int RULE_SIZE=14;
+char* operational(char* s){
+    const char* RULEX="XY-F+XY+F";
+    const char* RULEY="YX+F-YX-F";
+    int RULE_SIZE=9;
     char* aux= (char*) malloc(sizeof(char)*0);
-    int tam= 0;
+    int size= 0;
 
     for(char* it=s; *it!='\0'; it++){ 
         if(*it=='X'){
             for(int i = 0; i<RULE_SIZE; i++){
-                tam++;
-                aux=(char*) realloc(aux, sizeof(char)*tam);
-                aux[tam-1]= RULEX[i];
+                size++;
+                aux=(char*) realloc(aux, sizeof(char)*size);
+                aux[size-1]= RULEX[i];
             }
         }
         else if(*it=='Y'){
             for(int i = 0; i<RULE_SIZE; i++){
-                tam++;
-                aux=(char*) realloc(aux, sizeof(char)*tam);
-                aux[tam-1]= RULEY[i];
+                size++;
+                aux=(char*) realloc(aux, sizeof(char)*size);
+                aux[size-1]= RULEY[i];
             }
         }
         else{
-            tam++;
-            aux=(char*) realloc(aux, sizeof(char)*tam);
-            aux[tam-1]=*it;
+            size++;
+            aux=(char*) realloc(aux, sizeof(char)*size);
+            aux[size-1]=*it;
         }
     }
+    aux[size] = '\0';
     return aux;
 };
 
@@ -50,29 +51,29 @@ void substituir(char* s){
 }
 
 
-char* controle(char* s, int n){
+char* control(char* s, int n){
     if(n==1){
         substituir(s);
         return s;
     }
-    return controle(operacional(s), n-1);
+    return control(operational(s), n-1);
 };
 
 int main(){
 
     FILE* f = fopen("bruna.txt", "w");
 
-    char axiom[2]="Y";
+    char axiom[2]="X";
     int angle=60;
-    char rulex[15]="YF-FXY+XFY-+FX";
-    char ruley[15]="F+XY+FYX+FX-YF";
+    char ruley[10]="XY-F+XY+F";
+    char rulex[10]="YX+F-YX-F";
 
-    fprintf(f, "Axioma: %s\nAngulo: %d\nRegra X: %s\nRegra Y: %s\n", axiom, angle, rulex, ruley);
+    fprintf(f, "axiom: %s\nangle: %d\nrule X: %s\nrule Y: %s\n", axiom, angle, rulex, ruley);
     fprintf(f, "---------------------------------------------------------------------------------------------------------\n");
 
     for (int i = 1; i <= 4; i++)
     {
-        fprintf(f, "Estágio %d: %s\n", i, controle("Y", i+1));
+        fprintf(f, "Estágio %d: %s\n", i, control("X\0", i+1));
         fprintf(f, "---------------------------------------------------------------------------------------------------------\n");
 
     }
